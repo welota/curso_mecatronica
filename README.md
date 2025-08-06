@@ -1,2 +1,0 @@
-# sgarggrarga
-ahetahdhadr
