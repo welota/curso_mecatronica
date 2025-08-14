@@ -1,0 +1,63 @@
+.content{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#preg1{
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+}
+
+#cimg1{
+    width: 25vw;
+    height: auto;
+    margin: 30px;
+    position: relative;
+    top: -80px;
+    z-index: 1;
+    overflow: visible;
+}
+
+.card1{
+    background-color: #ddebec;
+    border-radius: 10px;
+    display: flex;
+    height: 15em;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.exp1{
+    text-align: right;
+    margin: 40px;
+    font-size: 1.3em;
+}
+
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100px;
+    aspect-ratio: 16/9;
+    background-color: #fdfffe;
+    z-index: 1;
+}
+
+.vid video{
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
