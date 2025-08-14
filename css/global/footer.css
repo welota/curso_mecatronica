@@ -1,6 +1,6 @@
 footer{
     color: #293b43;
-    padding: 20px 0;
+    padding: 20px 10rem;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -11,6 +11,7 @@ footer{
     display: flex;
     justify-content: space-between;
     flex: 1;
+
     .newspaper{
         margin-left: 20px;
         display: flex;
@@ -31,6 +32,7 @@ footer{
                 flex: 1; /* ocupa todo el ancho restante */
                 background-color: #e9e9e6;
                 font-size: 1em;
+                border-radius: 5px 0 0 5px;
             }
 
             button {
@@ -41,7 +43,18 @@ footer{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 5px;
+                border-radius: 0 5px 5px 0;
+                transition: all .2s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+
+                &:hover {
+                    background-color: #4b4e4f;
+                }
             }
         }
     }
@@ -49,39 +62,20 @@ footer{
 
 
 .r-cont{
-    .pages{
-        margin-right: 50px;
+    font-size: 1.2em;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 
-        a{
-            text-decoration: none;
-            color: #5e6163;
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-left: 2vw;
-            transition: all .1s;
+    a{
+        text-decoration: none;
+        color: #6c7879;
+        margin-bottom: 10px;
+        transition: all .1s;
 
-            &:hover{
-                color: #293b43;
-            }
-        }
-    }
-
-    .social{
-        font-size: 1.2em;
-        margin-right: 50px;
-        display: flex;
-        flex-direction: column;
-        text-align: right;
-    
-        a{
-            text-decoration: none;
-            color: #6c7879;
-            margin-bottom: 10px;
-            transition: all .1s;
-    
-            &:hover{
-                color: #293b43;
-            }
+        &:hover{
+            color: #293b43;
         }
     }
 }

@@ -23,6 +23,7 @@
     color: white;
     font-size: 3em;
     z-index: 2;
+    text-align: center;
 }
 
 .banner button{
