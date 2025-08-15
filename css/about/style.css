@@ -1,0 +1,39 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #293b43;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+.about{
+    background-color: azure;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.info{
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info > div{
+    background-color: antiquewhite;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    height: 100%;
+}
+
+footer{
+    color: white;
+}
