@@ -11,7 +11,7 @@
     background-color: #293b43;
 }
 
-.banner video{
+.banner img{
     position: absolute;
     top: 0;
     left: 0;
@@ -21,24 +21,27 @@
 }
 
 .banner h1{
-    color: white;
+    color: black;
     font-size: 3em;
     z-index: 2;
     text-align: center;
 }
 
 .banner button{
-    padding: 15px 25px;
-    font-size: 1.2em;
-    background-color: rgba(50,50,50, 0.5);
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-family: "Geist", sans-serif;
+    font-weight: bold;
+    background-color: #fff;
     backdrop-filter: blur(5px);
-    border-radius: 5px;
-    color: white;
+    border-radius: 10px;
+    color: black;
     border: none;
     cursor: pointer;
     z-index: 2;
+    transition: all .2s;
 }
 
 .banner button:hover{
-    background-color: #555;
+    background-color: #ddd;
 }

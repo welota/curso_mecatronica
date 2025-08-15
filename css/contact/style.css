@@ -46,6 +46,7 @@ body {
         border-radius: 5px;
         padding: 10px 20px;
         cursor: pointer;
+        transition: all .3s;
     }
 
     #submit-contact:hover{
@@ -55,5 +56,9 @@ body {
 
 
 footer{
+    color: white;
+}
+
+footer .r-cont{
     color: white;
 }
