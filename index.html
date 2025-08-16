@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_circle" />
 </head>
 <body>
     <div class="menu">
@@ -19,8 +20,16 @@
         <a href="html/about.html">Sobre nosotros</a>
         <a href="html/contact.html">Contactos</a>
         <div id="blank"></div>
-        <a href="html/signin.html">Registrarse</a>
-        <a href="html/login.html">Iniciar Sesion</a>
+        <div class="unregister-user">
+            <a href="html/signin.html">Registrarse</a>
+            <a href="html/login.html">Iniciar Sesion</a>
+        </div>
+        <div class="user">
+            <a href="#" id="registered-user">Usuario <span class="material-symbols-outlined">account_circle</span></a>
+            <div class="user-cont">
+                <button id="logout">Cerrar Sesion</button>
+            </div>
+        </div>
     </div>
 
     <div class="banner">
@@ -45,6 +54,10 @@
         </div>
         <!-- video informativo -->
     </div>
+
+    <script src="js/account/check_register.js"></script>
+    <script src="js/account/start_button.js"></script>
+    <script src="js/account/logout.js"></script>
 </body>
 <footer>
     <div class="l-cont">
