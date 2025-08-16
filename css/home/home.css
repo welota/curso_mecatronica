@@ -27,7 +27,7 @@
 }
 
 .card1{
-    background-color: #ddebec;
+    background-color: #e2ceb1;
     border-radius: 10px;
     display: flex;
     height: -15vw;
@@ -53,7 +53,7 @@
     left: 50%;
     transform: translateX(-50%);
     aspect-ratio: 16/9;
-    background-color: #fdfffe;
+    background-color: #fdfce8;
     z-index: 1;
     padding: 20px;
 }

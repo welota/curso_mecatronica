@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafcf6;
+    font-family: "Geist", sans-serif;
+    overflow-x: hidden;
+}
+
+.content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+}
+
+.content > :not(:first-child){
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.content > :not(:first-child) > *{
+    width: 100%;
+    height: 100%;
+}
+
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    height: 100vh;
+    width: 25em;
+    background-color: wheat;
+    padding: 1em;
+}
+
+.side-menu button{
+    width: 100%;
+    height: 3em;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.side-menu button:hover{
+    background-color: #f0f0f0;
+}
+
+.video .top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video .top iframe{
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff00;
+    transform: translateY(100%);
+}
+
+.navbar button{
+    background-color: #bcd;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.navbar button:hover{
+    background-color: #abc;
+}
+
+button{
+    font-family: "Geist", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
