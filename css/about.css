@@ -1,6 +1,5 @@
 body {
-    line-height: 1.6;
-    background-color: #293b43;
+    background: #000 url(../media/global/bg.webp) no-repeat center;
 }
 
 .content{
@@ -8,11 +7,12 @@ body {
 }
 
 .about{
-    background-color: azure;
+    background-color: #f0ffffaa;
+    backdrop-filter: blur(10px);
     width: 85%;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .info{
@@ -21,18 +21,19 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch; /* Make all children same height */
 }
 
 .info > div{
-    background-color: antiquewhite;
+    background-color: #faebd7aa;
+    backdrop-filter: blur(10px);
     gap: 20px;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin: 10px;
+    flex: 1 1 0; /* Make all cards grow/shrink equally */
     height: 100%;
-}
-
-footer{
-    color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* Prevent overflow */
 }

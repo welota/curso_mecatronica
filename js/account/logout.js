@@ -5,6 +5,7 @@ function DeleteCookie(name) {
 const logoutButton = document.getElementById("logout");
 
 logoutButton.onclick = function() {
-    DeleteCookie("user");
+    DeleteCookie("username");
+    DeleteCookie("email");
     document.location.reload()
 };

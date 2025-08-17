@@ -16,20 +16,21 @@
 <body>
     <div class="signin-form">
         <div class="left">
-            <img src="../media/signin/img.jpg" alt="">
+            <img src="../media/signin/img.webp" alt="">
         </div>
 
         <div class="right">
             <a href="../"><span class="material-symbols-outlined">home</span></a>
-            <form>
+            <form id="login-form">
                 <h1>Iniciar Sesion</h1>    
                 <input type="email" id="email" name="email" placeholder="Email" required> <br>
+                <input type="password" id="password" name="password" placeholder="Contraseña" minlength="8" maxlength="16" required> <br>
     
-                <input type="password" id="password" name="password" placeholder="Contraseña" required> <br>
-    
-                <button type="submit">Continuar</button>
+                <button type="submit" id="submit">Continuar</button>
             </form>
         </div>
     </div>
+
+    <script src="../js/account/login.js"></script>
 </body>
 </html>

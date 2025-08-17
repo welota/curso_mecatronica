@@ -52,28 +52,25 @@
         </div>
 
         <div class="vid">
-            <video src="#" controls></video>
+            <iframe src="https://www.youtube.com/embed/bxcg8eVYRz8?si=UAQP5tulvjicdKg1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <!-- video informativo -->
     </div>
 
     <script src="js/account/check_register.js"></script>
-    <script src="js/account/start_button.js"></script>
     <script src="js/account/logout.js"></script>
+    <script src="js/account/start_button.js"></script>
 </body>
 <footer>
-    <div class="l-cont">
-        <div class="newspaper">
-            <p>Suscribete a nuestro boletin</p>
-            <div class="input-group">
-                <input type="text" name="newspaper" id="newspaper" placeholder="Ingresa tu email">
-                <button type="submit"><img src="/curso_mecatronica/media/global/chevron-right.webp" alt="Enviar" id="submit"></button>    
-            </div>
-        </div>
+    <div class="newspaper">
+        <p>Suscribete a nuestro boletin</p>
+        <form class="input-group">
+            <input type="text" name="newspaper" id="newspaper" placeholder="Ingresa tu email" required>
+            <button type="submit"><img src="./media/global/chevron-right.webp" alt="Enviar" id="submit"></button>    
+        </form>
     </div>
 
-    <div class="r-cont">
-        <h3 style="color: #5e6163;">Redes Sociales</h3>            
+    <div class="social">        
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">Twitter</a>

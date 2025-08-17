@@ -58,7 +58,7 @@
     padding: 20px;
 }
 
-.vid video{
+.vid iframe{
     background-color: black;
     border-radius: 10px;
     width: 100%;

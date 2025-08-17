@@ -7,8 +7,8 @@ function GetCookie(name) {
 const button = document.getElementById("start");
 
 button.onclick = function() {
-    if (GetCookie("user")) {
-        document.location.href = "html/introduction.html";
+    if (GetCookie("username")) {
+        document.location.href = "html/courses/introduction.html";
     } else {
         document.location.href = "html/signin.html";
     }

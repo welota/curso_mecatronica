@@ -8,9 +8,13 @@ function GetCookie(name) {
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
+if (GetCookie("username")) {
+    document.location.href = "../html/introduction.html"
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     if (GetCookie("user")) {
-        document.location.href = "../html/introduction.html"
+        document.location.href = "../html/courses/introduction.html"
     }
 
     document.getElementById("form").addEventListener("submit", function(event) {
@@ -18,13 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const username = document.getElementById("username").value;
         const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+        // por ahorita no guardo la contraseña porque no se pueden escribir en archivos json desde js
 
-        const user = { username, email, password };
-        SetCookie("user", JSON.stringify(user));
+        SetCookie("username", username);
+        SetCookie("email", email);
 
-        alert("Usuario registrado exitosamente");
-
-        document.location.href = "../html/introduction.html";
+        document.location.href = "../html/courses/introduction.html";
     });
 });

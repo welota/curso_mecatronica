@@ -47,25 +47,35 @@ body{
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
+    font-family: "Geist", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .side-menu button:hover{
     background-color: #f0f0f0;
 }
 
-.video .top{
+.video{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
 
-.video .top iframe{
+.video iframe{
     aspect-ratio: 16/9;
     width: 100%;
     height: auto;
     object-fit: cover;
     overflow: hidden;
+}
+
+#test-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .navbar{
@@ -74,6 +84,7 @@ body{
     align-items: center;
     background-color: #ffffff00;
     transform: translateY(100%);
+    margin: 10px;
 }
 
 .navbar button{
@@ -87,10 +98,4 @@ body{
 
 .navbar button:hover{
     background-color: #abc;
-}
-
-button{
-    font-family: "Geist", sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
 }

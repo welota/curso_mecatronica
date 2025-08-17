@@ -4,16 +4,17 @@ function GetCookie(name) {
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
+const userLabel = document.getElementById("registered-user");
+
 const registeredUser = document.querySelector(".user");
 const unregisterUser = document.querySelector(".unregister-user");
 
-document.addEventListener("DOMContentLoaded", function() {
+if (GetCookie("username")) {
+    registeredUser.style.display = "inline-block";
+    unregisterUser.style.display = "none";
+    userLabel.innerHTML = `${GetCookie("username")} <span class="material-symbols-outlined">account_circle</span>`;
 
-    if (GetCookie("user")) {
-        registeredUser.style.display = "inline-block";
-        unregisterUser.style.display = "none";
-    } else {
-        registeredUser.style.display = "none";
-        unregisterUser.style.display = "inline-block";
-    }
-});
+} else {
+    registeredUser.style.display = "none";
+    unregisterUser.style.display = "inline-block";
+}
