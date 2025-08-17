@@ -9,9 +9,14 @@ function SetCookie(name, value) {
 }
 
 const loginForm = document.getElementById("login-form")
+var lastPage = "../html/courses/";
+
+if (GetCookie("lastpage")) {
+    lastPage += `${GetCookie("lastpage")}.html`;
+}
 
 if (GetCookie("username")) {
-    document.location.href = "../html/courses/introduction.html"
+    document.location.href = lastPage
 }
 
 loginForm.addEventListener("submit", (e) => {
@@ -30,6 +35,7 @@ loginForm.addEventListener("submit", (e) => {
                 if (data.email === email && data.password === user.password) {
                     SetCookie("username", user.username);
                     SetCookie("email", email);
+                    SetCookie("lastpage", user.lastpage);
                     document.location.href = "../index.html"
                     return
                 }

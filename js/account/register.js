@@ -8,13 +8,19 @@ function GetCookie(name) {
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
+var lastPage = "../html/courses/";
+
+if (GetCookie("lastpage")) {
+    lastPage += `${GetCookie("lastpage")}.html`;
+}
+
 if (GetCookie("username")) {
-    document.location.href = "../html/introduction.html"
+    document.location.href = lastPage
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     if (GetCookie("user")) {
-        document.location.href = "../html/courses/introduction.html"
+        document.location.href = lastPage
     }
 
     document.getElementById("form").addEventListener("submit", function(event) {
@@ -26,7 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         SetCookie("username", username);
         SetCookie("email", email);
+        SetCookie("lastpage", "introduction")
 
-        document.location.href = "../html/courses/introduction.html";
+        document.location.href = lastPage;
     });
 });

@@ -2,24 +2,24 @@
     "prueba@mail.com": {
         "username": "prueba",
         "password": "12345678",
-        "finish": false
+        "lastpage": "introduction"
     },
 
     "ximena@mail.com": {
         "username": "ximena",
         "password": "87654321",
-        "finish": false
+        "lastpage": "components"
     },
 
     "ana@mail.com": {
         "username": "ana",
         "password": "lamerabestia",
-        "finish": true
+        "lastpage": "micro"
     },
 
     "daniel@mail.com": {
         "username": "daniel",
         "password": "elelegido123",
-        "finish": true
+        "lastpage": "final"
     }
 }

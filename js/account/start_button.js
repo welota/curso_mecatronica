@@ -6,9 +6,15 @@ function GetCookie(name) {
 
 const button = document.getElementById("start");
 
+var lastPage = "html/courses/";
+
+if (GetCookie("lastpage")) {
+    lastPage += `${GetCookie("lastpage")}.html`;
+}
+
 button.onclick = function() {
     if (GetCookie("username")) {
-        document.location.href = "html/courses/introduction.html";
+        document.location.href = lastPage;
     } else {
         document.location.href = "html/signin.html";
     }
