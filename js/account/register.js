@@ -19,10 +19,6 @@ if (GetCookie("username")) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (GetCookie("user")) {
-        document.location.href = lastPage
-    }
-
     document.getElementById("form").addEventListener("submit", function(event) {
         event.preventDefault();
 
