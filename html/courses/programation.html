@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduccion</title>
+    <title>Programación</title>
     <link rel="stylesheet" href="../../css/global/menu.css">
     <link rel="stylesheet" href="../../css/global/footer.css">
     <link rel="stylesheet" href="../../css/courses.css">
@@ -47,46 +47,62 @@
         </div>
 
         <div class="intro">
-            <iframe src="../../media/course/introduction/test.pdf" frameborder="0"></iframe>
+            <iframe src="../../media/course/programation.pdf" frameborder="0"></iframe>
         </div>
 
         <div class="sample">
-            <iframe src="" frameborder="0"></iframe>
+            <img src="../../media/course/exa.png" alt="">
         </div>
 
-                <div class="test">
+        <div class="eval">
             <form id="test-form">
                 <!-- q = pregunta, a = respuesta -->
-                <h2>Test 1</h2>
+                <h2>Evaluación 2</h2>
                 <div class="question">
-                    <h3>Pregunta 1: ¿Qué es la mecatrónica?</h3>
+                    <h3>1. ¿Cuál es el lenguaje base del entorno de programación Arduino?</h3>
                     <div class="option">
-                        <input type="radio" name="answer1" id="q1a1" value="respuesta1" required>
-                        <label for="q1a1">Respuesta 1</label>
+                        <input type="radio" name="answer1" id="q1a1" value="1" required>
+                        <label for="q1a1">Python con librerías gráficas simplificadas.</label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="answer1" id="q1a2" value="respuesta2" required>
-                        <label for="q1a2">Respuesta 2</label>
+                        <input type="radio" name="answer1" id="q1a2" value="2" required>
+                        <label for="q1a2">Java con soporte para microcontroladores.</label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="answer1" id="q1a3" value="respuesta3" required>
-                        <label for="q1a3">Respuesta 3</label>
+                        <input type="radio" name="answer1" id="q1a3" value="3" required>
+                        <label for="q1a3">C/C++ con librerías específicas para manejo de hardware.</label> <!--Correcta-->
                     </div>
                 </div>
                 
                 <div class="question">
-                    <h3>Pregunta 2: Menciona una aplicación de la mecatrónica.</h3>
+                    <h3>2. ¿Qué hace la línea <span style="background-color: #666;color: #fff;border-radius: 10px;padding: 5px;">miServo.attach(9);</span> en el código de Arduino?</h3>
                     <div class="option">
-                        <input type="radio" name="answer2" id="q2a1" value="respuesta1" required>
-                        <label for="q2a1">Respuesta 1</label>
+                        <input type="radio" name="answer2" id="q2a1" value="1" required>
+                        <label for="q2a1">Conecta el servo motor al pin analógico A0.</label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="answer2" id="q2a2" value="respuesta2" required>
-                        <label for="q2a2">Respuesta 2</label>
+                        <input type="radio" name="answer2" id="q2a2" value="2" required>
+                        <label for="q2a2">Indica al programa que el servo está conectado al pin digital 9.</label> <!--Correcta-->
                     </div>
                     <div class="option">
-                        <input type="radio" name="answer2" id="q2a3" value="respuesta3" required>
-                        <label for="q2a3">Respuesta 3</label>
+                        <input type="radio" name="answer2" id="q2a3" value="3" required>
+                        <label for="q2a3">Configura la velocidad máxima del servo en 9 grados por segundo.</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>3. ¿Cuál de los siguientes lenguajes se recomienda para análisis de datos, visión artificial y aplicaciones con ROS en mecatrónica?</h3>
+                    <div class="option">
+                        <input type="radio" name="answer2" id="q3a1" value="1" required>
+                        <label for="q3a1">C++ en su versión estándar.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer2" id="q3a2" value="2" required>
+                        <label for="q3a2">Python.</label> <!--Correcta-->
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer2" id="q3a3" value="3" required>
+                        <label for="q3a3">Micro ensamblador (ASM).</label>
                     </div>
                 </div>
 

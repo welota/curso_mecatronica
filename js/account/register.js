@@ -34,6 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         SetCookie("email", email);
         SetCookie("lastpage", "introduction")
 
-        document.location.href = lastPage;
+        document.location.href = "../html/courses/introduction.html";
     });
 });

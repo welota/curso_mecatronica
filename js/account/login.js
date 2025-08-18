@@ -8,7 +8,8 @@ function SetCookie(name, value) {
     document.cookie = name + "=" + value + "; path=/";
 }
 
-const loginForm = document.getElementById("login-form")
+const credentialsPath = "/curso_mecatronica/credenciales.json";
+const loginForm = document.getElementById("login-form");
 var lastPage = "../html/courses/";
 
 if (GetCookie("lastpage")) {

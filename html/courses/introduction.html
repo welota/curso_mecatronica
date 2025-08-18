@@ -47,7 +47,7 @@
         </div>
 
         <div class="info">
-            <iframe src="../../media/course/introduction/test.pdf" frameborder="0"></iframe>
+            <iframe src="../../media/course/intro.pdf" frameborder="0"></iframe>
         </div>
 
         <div class="video">
@@ -57,36 +57,52 @@
         <div class="test">
             <form id="test-form">
                 <!-- q = pregunta, a = respuesta -->
-                <h2>Test 1</h2>
+                <h2>Evaluación 1</h2>
                 <div class="question">
-                    <h3>Pregunta 1: ¿Qué es la mecatrónica?</h3>
+                    <h3>1. ¿Quién acuñó por primera vez el término Mecatrónica en 1969?</h3>
                     <div class="option">
                         <input type="radio" name="answer1" id="q1a1" value="respuesta1" required>
-                        <label for="q1a1">Respuesta 1</label>
+                        <label for="q1a1">Alan Turing, mientras investigaba sobre Cibernética.</label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="answer1" id="q1a2" value="respuesta2" required>
-                        <label for="q1a2">Respuesta 2</label>
+                        <input type="radio" name="answer1" id="q1a2" value="respuesta2" required> <!-- Correcta-->
+                        <label for="q1a2">Tetsuro Mori, ingeniero de la empresa japonesa Yaskawa Electric Co.</label>
                     </div>
                     <div class="option">
                         <input type="radio" name="answer1" id="q1a3" value="respuesta3" required>
-                        <label for="q1a3">Respuesta 3</label>
+                        <label for="q1a3">Norbert Wiener, considerado padre de la teoría de control.</label>
                     </div>
                 </div>
                 
                 <div class="question">
-                    <h3>Pregunta 2: Menciona una aplicación de la mecatrónica.</h3>
+                    <h3>2. ¿Cuál fue una de las principales aplicaciones de la mecatrónica en la década de los 70?</h3>
                     <div class="option">
                         <input type="radio" name="answer2" id="q2a1" value="respuesta1" required>
-                        <label for="q2a1">Respuesta 1</label>
+                        <label for="q2a1">El desarrollo de servomecanismos usados en puertas automáticas, máquinas de autoservicio y cámaras auto-focus.</label> <!-- Correcta -->
                     </div>
                     <div class="option">
                         <input type="radio" name="answer2" id="q2a2" value="respuesta2" required>
-                        <label for="q2a2">Respuesta 2</label>
+                        <label for="q2a2">El diseño de impresoras 3D con sensores MEMS.</label>
                     </div>
                     <div class="option">
                         <input type="radio" name="answer2" id="q2a3" value="respuesta3" required>
-                        <label for="q2a3">Respuesta 3</label>
+                        <label for="q2a3">La creación de robots quirúrgicos como el sistema Da Vinci.</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>3. ¿Cuál fue una de las principales aplicaciones de la mecatrónica en la década de los 70?</h3>
+                    <div class="option">
+                        <input type="radio" name="answer3" id="q3a1" value="1" required>
+                        <label for="q3a1">Prótesis biónicas que se controlan con señales musculares o neuronales.</label> <!-- Correcta -->
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer3" id="q3a2" value="2" required>
+                        <label for="q3a2">Cintas transportadoras usadas en fábricas de ensamblaje.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer3" id="q3a3" value="3" required>
+                        <label for="q3a3">Robots de servicio en hostelería para limpieza y vigilancia.</label>
                     </div>
                 </div>
 
@@ -98,5 +114,6 @@
     <script src="../../js/account/check_register.js"></script>
     <script src="../../js/account/logout.js"></script>
     <script src="../../js/course/change-view.js"></script>
+    <script src="../../js/course/evaluations.js"></script>
 </body>
 </html>
