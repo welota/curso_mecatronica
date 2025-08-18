@@ -20,8 +20,8 @@
     object-fit: cover;
     margin: 2vw;
     position: relative;
-    left: 0;
     top: -5vw;
+    left: 0;
     z-index: 1;
     overflow: visible;
 }

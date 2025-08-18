@@ -8,7 +8,7 @@ function GetCookie(name) {
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
-var lastPage = "../html/courses/";
+var lastPage = "courses/";
 
 if (GetCookie("lastpage")) {
     lastPage += `${GetCookie("lastpage")}.html`;
@@ -19,10 +19,6 @@ if (GetCookie("username")) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (GetCookie("user")) {
-        document.location.href = lastPage
-    }
-
     document.getElementById("form").addEventListener("submit", function(event) {
         event.preventDefault();
 
