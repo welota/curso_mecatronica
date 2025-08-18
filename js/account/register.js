@@ -8,7 +8,7 @@ function GetCookie(name) {
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
-var lastPage = "../html/courses/";
+var lastPage = "courses/";
 
 if (GetCookie("lastpage")) {
     lastPage += `${GetCookie("lastpage")}.html`;
